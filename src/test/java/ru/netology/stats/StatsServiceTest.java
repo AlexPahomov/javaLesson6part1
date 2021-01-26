@@ -20,7 +20,7 @@ public class StatsServiceTest {
     void SalesPerMonth() {
         int expected = 15;
         StatsService service = new StatsService();
-        int actual = service.SalesPerMonth(purchases);
+        int actual = service.averageSales(purchases);
         assertEquals(expected, actual);
     }
 
